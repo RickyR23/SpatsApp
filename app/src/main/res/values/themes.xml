@@ -6,4 +6,22 @@
     </style>
 
     <style name="Theme.SpatsApp" parent="Base.Theme.SpatsApp" />
+
+    <style name="Theme.SpatsApp.Fullscreen" parent="Theme.SpatsApp">
+        <item name="android:actionBarStyle">@style/Widget.Theme.SpatsApp.ActionBar.Fullscreen</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.SpatsApp.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+
+    <style name="Theme.App.splashScreen" parent="Theme.SplashScreen">
+    <item name="windowSplashScreenBackground">@color/black </item>
+    <item name="windowSplashScreenAnimatedIcon">@drawable/android_large_splash__1_</item>
+    <item name="postSplashScreenTheme">@style/Base.Theme.SpatsApp </item>
+
+    </style>
 </resources>
